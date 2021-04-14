@@ -82,6 +82,18 @@ public class Operators {
         if (wasCar) {
             System.out.println("wasCar is true");
         }
+
+        double challengeValueOne = 20.00d;
+        double challengeValueTwo = 80.00d;
+        double sumTimesHundred = (challengeValueOne + challengeValueTwo) * 100.00d;
+        System.out.println("MyValueTotals = " + sumTimesHundred);
+        double remainder = sumTimesHundred % 40.00d;
+        System.out.println("Remainder = " + remainder);
+        boolean remainderIsZero = (remainder == 0) ? true : false;
+        System.out.println("RemainderIsZero = " + remainderIsZero);
+        if (!remainderIsZero){
+            System.out.println("Got some remainder");
+        }
     }
 
 }
