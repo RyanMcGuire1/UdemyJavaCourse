@@ -2,8 +2,23 @@ package DayOfTheWek;
 
 public class DayOfTheWeek {
     public static void main(String[] args) {
+        printDayOfTheWeek(-1);
+        printDayOfTheWeek(0);
+        printDayOfTheWeek(1);
+        printDayOfTheWeek(2);
+        printDayOfTheWeek(3);
         printDayOfTheWeek(4);
+        printDayOfTheWeek(5);
+        printDayOfTheWeek(6);
+        printDayOfTheWeek(7);
+        printWeekDay(-1);
+        printWeekDay(0);
+        printWeekDay(1);
+        printWeekDay(2);
+        printWeekDay(3);
         printWeekDay(4);
+        printWeekDay(5);
+        printWeekDay(6);
     }
 
     public static void printDayOfTheWeek(int day){
