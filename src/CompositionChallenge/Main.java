@@ -8,6 +8,20 @@ package CompositionChallenge;
 
 public class Main {
     public static void main(String[] args) {
+        Wall Wall1 = new Wall("West");
+        Wall Wall2 = new Wall("East");
+        Wall Wall3 = new Wall("South");
+        Wall Wall4 = new Wall("North");
 
+        Ceiling ceiling = new Ceiling(12,55);
+
+        Bed bed = new Bed("Modern", 4, 3 ,2 ,1);
+
+        Lamp lamp = new Lamp("Classic", false, 75);
+
+        Bedroom bedroom = new Bedroom("Ryan's",Wall1, Wall2, Wall3, Wall4, ceiling, bed, lamp);
+        bedroom.makeBed();
+
+        bedroom.getLamp().turnOn();
     }
 }
