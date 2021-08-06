@@ -2,7 +2,7 @@ package Encapsulation;
 
 public class Player {
 
-    public String name;
+    public String fullName;
     public int health;
     public String weapon;
 
