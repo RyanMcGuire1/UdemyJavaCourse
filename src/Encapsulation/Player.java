@@ -13,4 +13,8 @@ public class Player {
            // reduced number of lives remaining for the player
        }
     }
+
+    public int healthRemaining(){
+        return this.health;
+    }
 }
