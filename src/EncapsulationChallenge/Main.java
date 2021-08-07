@@ -10,5 +10,13 @@ public class Main {
         //Add methods to fill up the tomer (up to a maximum 0f 100%), another method to
         //simulate printing a page (which should increase the number of pages printed).
         //Decide on the scope, whether to use constructors, and anything else you think is needed.
+        Printer printer = new Printer(50, false);
+        System.out.println("initial page count = " + printer.getPagesPrinted());
+        int pagesPrinted = printer.printPages(4);
+        System.out.println("Pages printed was " + pagesPrinted + " new total print count for printer = " + printer.getPagesPrinted());
+        pagesPrinted = printer.printPages(2);
+        System.out.println("Pages printed was " + pagesPrinted + " new total print count for printer = " + printer.getPagesPrinted());
+
+
     }
 }
