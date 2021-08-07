@@ -27,4 +27,19 @@ public class Printer {
             return -1;
         }
     }
+
+    public int printPages(int pages){
+      int pagesToPrint = pages;
+        if (this.duplex) {
+            pagesToPrint = (pages / 2)+(pages % 2);
+            System.out.println("Printing in duplex mode");
+        }
+        this.pagesPrinted += pagesToPrint;
+        return pagesToPrint;
+        }
+
+    public int getPagesPrinted() {
+        return pagesPrinted;
+    }
 }
+
