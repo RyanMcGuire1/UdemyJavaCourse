@@ -16,5 +16,14 @@ public class Printer {
             return (tonerLevel + tonerAmount > 100) ? -1 : (tonerLevel += tonerAmount);
         }
         return -1;
+
+        public int printPages(int pages) {
+    }
+        int pagesToPrint = (duplex) ? (Math.round((float) pages/2)) : pages;
+        pagesPrinted += pagesToPrint;
+        return pagesToPrint;
+    }
+    public int getPagesPrinted() {
+        return pagesPrinted;
     }
 }
