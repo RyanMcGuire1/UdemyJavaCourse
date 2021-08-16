@@ -55,6 +55,50 @@ class Mitsubishi extends Car{
         return "Mitsubishi -> brake()";
     }
 }
+
+ class Ford extends Car{
+
+    public Ford(int cylinders, String name) {
+        super(cylinders, name);
+    }
+
+    @Override
+    public String startEngine() {
+        return "Ford -> startEngine()";
+    }
+
+    @Override
+    public String accelerate() {
+        return "Ford -> accelerate()";
+    }
+
+    @Override
+    public String brake() {
+        return "Ford -> brake()";
+    }
+}
+
+ class Holden extends Car{
+
+    public Holden(int cylinders, String name) {
+        super(cylinders, name);
+    }
+
+    @Override
+    public String startEngine() {
+        return "Holden -> startEngine()";
+    }
+
+    @Override
+    public String accelerate() {
+        return "Holden -> accelerate()";
+    }
+
+    @Override
+    public String brake() {
+        return "Holden -> brake()";
+    }
+}
 public class Main {
     public static void main(String[] args) {
         //We are going to go back to the car analogy.
@@ -88,16 +132,11 @@ public class Main {
         System.out.println(ford.accelerate());
         System.out.println(ford.brake());
 
-        Mitsubishi mitsubishi = new Mitsubishi(6, "Outlander VRW 4WD");
-        System.out.println(mitsubishi.startEngine());
-        System.out.println(mitsubishi.accelerate());
-        System.out.println(mitsubishi.brake());Mitsubishi mitsubishi = new Mitsubishi(6, "Outlander VRW 4WD");
-        System.out.println(mitsubishi.startEngine());
-        System.out.println(mitsubishi.accelerate());
-        System.out.println(mitsubishi.brake());Mitsubishi mitsubishi = new Mitsubishi(6, "Outlander VRW 4WD");
-        System.out.println(mitsubishi.startEngine());
-        System.out.println(mitsubishi.accelerate());
-        System.out.println(mitsubishi.brake());
-    }
+        Holden holden = new Holden(6, "Holden Commadore");
+        System.out.println(holden.startEngine());
+        System.out.println(holden.accelerate());
+        System.out.println(holden.brake());
 
+
+    }
 }
